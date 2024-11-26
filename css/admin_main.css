@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  /* ================================================================== */
+  
+  /* Styling The Navigation Side */
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 30px 25px;
+    box-shadow: 0 0 12px 0 #d8d8d8;
+  }
+  
+  nav a.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-bottom: 35px;
+  }
+  
+  nav a.logo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  nav a.logo h3 {
+    font-size: 25px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 170px;
+  }
+  
+  .active {
+    background-color: #f3f5f8;
+  }
+  
+  nav li:not(:last-child),
+  nav > div a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  nav li a,
+  nav > div a {
+    display: block;
+    text-decoration: none;
+    color: #5f6165;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  nav li a:hover,
+  nav > div a:hover {
+    background-color: #f3f5f8;
+  }
+  
+  nav i {
+    margin-right: 5px;
+  }
+  
+  nav > div {
+    margin-top: 80px;
+    position: sticky;
+    top: 80px;
+  }
+  
+  @media (max-width: 767px) {
+    nav span,
+    nav a.logo h3 {
+      display: none;
+    }
+    nav > :nth-child(n) {
+      width: 32px;
+    }
+    nav {
+      padding: 22px 10px;
+    }
+  }
+  /* Styling The Navigation Side */
+  
