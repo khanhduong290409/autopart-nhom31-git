@@ -93,4 +93,84 @@
     }
   }
   /* Styling The Navigation Side */
+  /* Styling The Dashboard Content */
+.content {
+    flex: 1;
+  }
   
+  /* Styling The Head */
+  header {
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .search {
+    position: relative;
+  }
+  
+  header .search i {
+    position: absolute;
+    z-index: 1;
+    color: grey;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  header input {
+    width: 230px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #f5f4f6;
+    border-radius: 6px;
+    padding-left: 35px;
+    font-size: 15px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  header input:focus {
+    caret-color: orange;
+    width: 330px;
+  }
+  
+  header input:focus::placeholder {
+    color: transparent;
+  }
+  
+  header .notify {
+    margin-left: auto;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  header .notify::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    right: 0px;
+    top: 1px;
+    border: 2px solid white;
+  }
+  
+  header img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    header input {
+      width: 230px;
+    }
+    header input:focus {
+      width: 270px;
+    }
+  }
+  /* Styling The Head */
