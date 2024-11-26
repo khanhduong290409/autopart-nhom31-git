@@ -244,3 +244,178 @@
       gap: 15px;
     }
   }
+  /* Styling The Percentage Animation */
+.info-card .progress {
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  
+  .info-card .progress .start,
+  .info-card .progress .end,
+  .info-card .progress .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+  }
+  .full-purple .progress .start,
+  .full-purple .progress .indicator {
+    background-color: white;
+  }
+  .pink .progress .start,
+  .pink .progress .indicator {
+    background-color: #ff7e86;
+  }
+  .purple .progress .start,
+  .purple .progress .indicator {
+    background-color: #a162f7;
+  }
+  .yellow .progress .start,
+  .yellow .progress .indicator {
+    background-color: #f6cc0d;
+  }
+  
+  .info-card .progress .end {
+    transform: rotate(270deg);
+    transform-origin: 50% 50px;
+  }
+  .full-purple .progress .end {
+    background-color: #b37efc;
+  }
+  .pink .progress .end,
+  .purple .progress .end,
+  .yellow .progress .end {
+    background-color: #f4f5f9;
+  }
+  
+  .info-card .progress .indicator {
+    transform-origin: 50% 50px;
+  }
+  
+  .info-card .progress .circular-progress {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    transform: rotate(-135deg);
+  }
+  
+  .info-card .progress .circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .full-purple .progress .circular-progress::before {
+    background-color: #a162f7;
+  }
+  .pink .progress .circular-progress::before,
+  .purple .progress .circular-progress::before,
+  .yellow .progress .circular-progress::before {
+    background-color: white;
+  }
+  
+  .info-card .progress .progress-number {
+    /* position: absolute; */
+    font-size:18px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+  /* Styling The Percentage Animation */
+/* Styling The Stats Section */
+.stats {
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    flex-wrap: wrap;
+  }
+  
+  .miles-stats,
+  .car-stats {
+    background: white;
+    flex: 1;
+    border-radius: 15px;
+    padding: 15px 35px;
+  }
+  
+  .miles-stats > span,
+  .car-stats > span {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+  .miles-stats .details,
+  .car-stats .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 15px;
+  }
+  
+  .miles-stats .details span:not(:last-child) {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #5f6165;
+  }
+  
+  #miles-stats {
+    width: 100%;
+  }
+  
+  .car-stats .details div span {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #5f6165;
+  }
+  
+  .car-stats .details div {
+    background-color: #f5f4f6;
+    border-radius: 15px;
+    display: flex;
+  }
+  
+  .miles-stats .details span.active {
+    background-color: #2884ff;
+    color: white;
+  }
+  
+  .car-stats .details span.active {
+    background-color: #ff764c;
+    color: white;
+    border-radius: 15px;
+    margin-left: 0;
+  }
+  
+  .miles-stats .details span:last-child {
+    font-weight: 700;
+    font-size: 17px;
+    color: #5f6165;
+    margin-left: auto;
+  }
+  
+  .car-stats .details > span {
+    font-weight: 700;
+    font-size: 17px;
+    color: #5f6165;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 767px) {
+    .stats {
+      gap: 15px;
+    }
+  }
+  /* Styling The Stats Section */
