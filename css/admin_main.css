@@ -419,3 +419,90 @@
     }
   }
   /* Styling The Stats Section */
+  /* Styling The Recommended Section */
+.recommend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .recommend .product {
+    padding: 17px 28px;
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .recommend .product:first-child {
+    background-color: #e1dfa4;
+  }
+  .recommend .product:nth-child(2) {
+    background-color: #e3ecf1;
+  }
+  .recommend .product:last-child {
+    background-color: #f4e3e5;
+  }
+  
+  .recommend .product div {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .recommend .product i {
+    font-size: 25px;
+    color: #72767c;
+  }
+  
+  .recommend .product i:first-of-type {
+    margin-right: 10px;
+  }
+  
+  .recommend .product figure {
+    margin-top: auto;
+  }
+  
+  .recommend .product figure img {
+    width: 250px;
+  }
+  
+  .recommend .product figure figcaption {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .recommend .product .details {
+    color: #72767c;
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  
+  .recommend .product .details img {
+    width: 16px;
+  }
+  
+  .recommend .product .details i {
+    font-size: 15px;
+  }
+  
+  .recommend .product .details :not(:last-child) {
+    margin-right: 17px;
+  }
+  
+  .recommend .product .details :last-child {
+    margin-left: auto;
+  }
+  
+  @media (max-width: 767px) {
+    .recommend {
+      gap: 15px;
+    }
+    .recommend .product figure {
+      text-align: center;
+    }
+  }
+  /* Styling The Recommended Section */
+  /* Styling The Dashboard Data */
+  /* Styling The Dashboard Content */
+  

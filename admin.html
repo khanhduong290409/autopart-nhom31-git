@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" />
+
     <title>Motiv.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
@@ -93,7 +95,7 @@
           <section class="cards">
             <div class="info-card full-purple">
               <i class="fa fa-usd" aria-hidden="true"></i>
-              <span>Doanh thu</span>
+              <span>Tổng doanh thu</span>
               <div class="progress">
                 <div class="progress-number"></div>
                 
@@ -126,11 +128,10 @@
           </section>
           <section class="stats">
             <div class="miles-stats">
-              <span><b>Biểu đồ </b> thống kê mốc thời gian lưu lượng truy cập</span>
+              <span><b>Thống kê</b> doanh thu các tuần gần nhất</span>
               <div class="details">
-                <span class="active">Ngày</span>
-                <span>Tuần</span>
-                <span>Tháng</span>
+                <span class="active">Tuần trước</span>
+                <span>Tuần này</span>
                 <span></span>
               </div>
               <figure>
@@ -138,14 +139,17 @@
               </figure>
             </div>
             <div class="car-stats">
-              <span><b>Biểu đồ</b> thống kê lượt khách truy cập các mốc thời gian</span>
+              <span><b>Thống kê</b> doanh thu theo năm nay</span>
               <div class="details">
-                <span>20 tháng 3</span>
-                <div>
-                  <span class="active">Ngày</span>
-                  <span>Tuần</span>
-                  <span>Tháng</span>
-                </div>
+                <span>20 tháng 8</span>
+                <!-- <div>
+                  <span class="active">8 tháng</span>
+                  <span>16 tháng</span>
+                  <span>24 tháng</span>
+                
+                </div> -->
+                <br>
+                <br>
               </div>
               <figure id="car-chart"></figure>
             </div>
@@ -154,6 +158,8 @@
       </section>
       <!-- End Dashboard Content -->
     </main>
-    
+    <script src="js/charts-admin.js"></script>
+    <script src="js/admin-main.js"></script>
+
 </body>
 </html>
