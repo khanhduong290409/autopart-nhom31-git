@@ -79,5 +79,79 @@
           </div>
         </nav>
         <!-- End Navbar -->
+         <!-- Start Dashboard Content -->
+     <section class="content">
+        <header>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder=" Search or type" />
+          </div>
+          <i class="fa-regular fa-bell notify"></i>
+          <img src="https://phongreviews.com/wp-content/uploads/2022/11/avatar-facebook-mac-dinh-19.jpg" alt="profile image" />
+        </header>
+        <section class="data">
+          <section class="cards">
+            <div class="info-card full-purple">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+              <span>Doanh thu</span>
+              <div class="progress">
+                <div class="progress-number"></div>
+                
+              </div>
+            </div>
+            <div class="info-card pink">
+              <i class="fa fa-line-chart" aria-hidden="true"></i>
+              <span>Đã bán</span>
+              <div class="progress">
+                <div class="progress-number"></div>
+                
+              </div>
+            </div>
+            <div class="info-card purple">
+              <i class="fa fa-archive" aria-hidden="true"></i>
+              <span>Kho sản phẩm</span>
+              <div class="progress">
+                <div class="progress-number"></div>
+                
+              </div>
+            </div>
+            <div class="info-card yellow">
+              <i class="fa fa-blind" aria-hidden="true"></i>
+              <span>Khách hàng mới</span>
+              <div class="progress">
+                <div class="progress-number"></div>
+                
+              </div>
+            </div>
+          </section>
+          <section class="stats">
+            <div class="miles-stats">
+              <span><b>Biểu đồ </b> thống kê mốc thời gian lưu lượng truy cập</span>
+              <div class="details">
+                <span class="active">Ngày</span>
+                <span>Tuần</span>
+                <span>Tháng</span>
+                <span></span>
+              </div>
+              <figure>
+                <canvas id="miles-chart"></canvas>
+              </figure>
+            </div>
+            <div class="car-stats">
+              <span><b>Biểu đồ</b> thống kê lượt khách truy cập các mốc thời gian</span>
+              <div class="details">
+                <span>20 tháng 3</span>
+                <div>
+                  <span class="active">Ngày</span>
+                  <span>Tuần</span>
+                  <span>Tháng</span>
+                </div>
+              </div>
+              <figure id="car-chart"></figure>
+            </div>
+          </section>
+          
+      </section>
+      <!-- End Dashboard Content -->
 </body>
 </html>
