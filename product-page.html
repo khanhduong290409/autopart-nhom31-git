@@ -18,14 +18,14 @@
 	<!-- Favicon end -->
 	<!-- CSS and Bootstrap 4 links start -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="stylesheet" href="css/product_page.css">
-  <!-- <link rel="stylesheet" href="css/index.css"> -->
-  <link rel="stylesheet" href="css/cart.css">
-  <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
+	<link rel="stylesheet" type="text/css" href="css/main-product-page.css" />
+  <link rel="stylesheet" href="css/product-page.css">
+  <link rel="stylesheet" href="css/index-product-page.css">
+  <link rel="stylesheet" href="css/cart-product-page.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/feedback.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
 
 	<!-- CSS and Bootstrap 4 links end -->
 </head>
@@ -146,7 +146,7 @@
                 <img src="img\items\dau-may-castrol-5w30.jpg" id="emphasisPicture">
                 <div class="smallImg">
                   <div class="col-4">
-                    <img src="img\items\dau-may-castrol-5w30.jpg" class="smallpictures" alt="">
+                    <img src="img\items\dau-may-castrol-5w30.jpg" class="smallpictures active" alt="">
                   </div>
                   <div class="col-4">
                     <img src="img\items\dau-may-mobil-1.jpg" class="smallpictures" alt="">
@@ -158,24 +158,11 @@
                     <img src="img\items\SNCF-5W30.jpg" class="smallpictures" alt="">
                   </div>
                 </div>
-                <div class="carousel mobile" data-carousel>
-                  <button class="carousel-button prev" data-carousel-button="prev"> <img
-                      src="./images/icon-previous.svg"></button>
-                  <button class="carousel-button next" data-carousel-button="next"> <img src="./images/icon-next.svg"></button>
-                  <ul data-slides>
-                    <li class="slide" data-active><img src="img/items/item-1.jpg"> </li>
-                    <li class="slide"><img src="img/items/item-2.jpg"></li>
-                    <li class="slide"><img src="img/items/item-3.jpg"></li>
-                    <li class="slide"><img src="img/items/item-4.jpg1"></li>
-                  </ul>
-                </div>
               </div>
               <div class="col-2">
-                <small class="companyName">
-                  Nhớt ôtô Amsoil 4T Performance 10W-40 946ml
-                </small>
-                <h2>  Thương hiệu: Amsoil          </h2>
-                <p> Loại dầu nhớt: Full tổng hợp  </p>
+                <small class="companyName">Nhớt ôtô Amsoil 4T Performance 10W-40 946ml</small>
+                <h5>Thương hiệu: Amsoil</h5>
+                <p>Loại dầu nhớt: Full tổng hợp</p>
                 <p>Cấp độ SAE: 10W-40</p>
                 <p>Dòng xe: dòng xe số 4 thì và tay côn phân khối lớn</p>
                 <p>Dung tích: 946ml/chai</p>
@@ -190,11 +177,11 @@
                 <div class="buttonsRow">
                   <div class="increment">
         
-                    <img src="./images/icon-minus.svg" id="minus">
+                    <img src="/img/icons/icon-minus.svg" id="minus">
         
                     <input type="number" name="totalItems" id="totalItems" value="1">
         
-                    <img src="./images/icon-plus.svg" id="plus">
+                    <img src="/img/icons/icon-plus.svg" id="plus">
         
                   </div>
                   <div class="callToAction">
@@ -217,6 +204,257 @@
           color:darkslategray;
         }
     </style>
+	<div class="container">
+        <div class="text-box-detail">
+          <hr>
+          <br>
+          <h2>CHI TIẾT</h2>
+          <p>Nhớt Amsoil 10w40 Performance là sản phẩm dầu nhớt xe máy đến từ thương hiệu Amsoil nổi tiếng của Mỹ. Đây là nhãn hiệu dầu nhớt lâu đời, được thành lập cách đây hơn 50 năm và là cái tên tiên phong đầu tiên đạt chuẩn về chất lượng do Viện Dầu khí Hoa Kỳ đưa ra. Có thể nói rằng vào thời điểm đó, các sản phẩm của Amsoil đã thay đổi diện mạo của ngành dầu nhớt toàn cầu.
+  
+          Là dòng nhớt an toàn, có độ ổn định cao, Amsoil 10W-40 Performance được sử dụng cho các giải đua danh tiếng trên thế giới. Hiện nay, sản phẩm danh tiếng này đang được nhập khẩu và phân phối bởi Huỳnh Châu – Nhà phân phối chính thức của Amsoil tại Việt Nam.
+          
+          Tiêu thụ hơn 3.27 triệu chiếc xe máy trong 2019 (theo thống kê của Hiệp hội các nhà sản xuất xe máy Việt Nam – VAMM và bộ Giao thông vận tải), thị trường Việt Nam là mảnh đất màu mỡ cho Amsoil. Đồng thời, với số lượng xe số rất lớn, sản phẩm Amsoil 10w40 Performance cũng rất được yêu thích bên cạnh những loại dầu nhớt cao cấp khác.</p>
+          <br>
+          <hr>
+          <br>
+          <h2>Nhớt Amsoil 4T Performance thích hợp cho dòng xe nào?
+          </h2>
+          <p>Nhớt Amsoil 10W40 Performance 0.946L là lựa chọn nhớt xe máy phù hợp cho xe số. Với tiêu chí chất lượng và tiết kiệm nhất, Nhớt Amsoil 10W40 Performance 0.946L giúp giảm thiểu ma sát trong quá trình vận hành của động cơ một cách tối đa, hạn chế việc ăn mòn các chi tiết trong động cơ. Giúp cho động cơ luôn vận hành trơn tru, mượt mà trong mọi điều kiện thời tiết khắc nghiệt.</p>
+          <p>Nhớt Amsoil 10W40 Performance phù hợp với các dòng xe số hiện đại trên thị trường Việt Nam. Bên cạnh đó, Nhớt Amsoil 10W40 Performance 0.946L này còn có thể phù hợp cho các dòng xe côn tay và xe mô tô mới nhất tại Việt Nam như: Exciter 135, Honda MSX, Exciter 150, Suzuki Raider, FZ150i, Yamaha R15, CBR150R và những xe có động cơ 150 phân khối trở lên.</p>
+          <br>
+          <hr>
+          <br>
+          <h2>Bao lâu nên thay nhớt Amsoil?
+          </h2>
+            <p>Theo khuyến cáo chung của các hãng xe tại Việt Nam thì thời gian thay dầu nhớt Amsoil 10W40 Performance định kỳ theo lịch bảo dưỡng trong cẩm nang hướng dẫn sử dụng theo từng loại xe, đặc biệt với xe mới mua. Trong điều kiện bình thường thì sau 1.000 km sử dụng đầu tiên buộc phải thay dầu nhớt cho xe.</p>
+            <p>Sau mỗi 4.000 km tiếp theo bạn nên thay dầu nhớt cho xe một lần. Trong điều kiện xe sử dụng thường xuyên khoảng 1.000 km mỗi tháng, bạn nên dự trù rút ngắn thời gian thay nhớt để đảm bảo ổn định cho xe.</p>
+          <br>
+          <hr>
+          <br>
+		  <h2>Video về sản phẩm : </h2>
+		  <div class="video-wrapper">
+	
+			<iframe class ="video-product" width="800" height="450" src="https://www.youtube.com/embed/6OzzYJ54N1Y" title="KÝ HIỆU CHỈ SỐ DẦU NHỚT Ô TÔ CÁCH PHÂN BIỆT DẦU NHỚT Ô TÔ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		  </iframe>
+		  <br>
+		  <br>
+	
+		  <br>
+		  </div>
+		</div>
+		<br>
+		<hr>
+		<br>
+	</div>
+    <div class="review-container">
+      <div class="review-wrapper">
+        <h3>Đánh giá sản phẩm</h3>
+        <form action="#">
+          <div class="review-rating">
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star review-star' style="--i: 0;"></i>
+            <i class='bx bx-star review-star' style="--i: 1;"></i>
+            <i class='bx bx-star review-star' style="--i: 2;"></i>
+            <i class='bx bx-star review-star' style="--i: 3;"></i>
+            <i class='bx bx-star review-star' style="--i: 4;"></i>
+          </div>
+          <textarea name="opinion" cols="30" rows="5" placeholder="Bình luận..."></textarea>
+          <div class="review-btn-group">
+            <button type="submit" class="review-btn review-submit">Gửi</button>
+            <button class="review-btn review-cancel">Xóa</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
+
+    <hr>
+	 <!-- Top items start -->
+     <div id="items">
+		<div class="container-fluid">
+					  <button id="btn-left" class="btn" type="button">
+					  <i class="fas fa-chevron-left"></i>
+				  </button>
+					  <button id="btn-right" class="btn" type="button">
+					  <i class="fas fa-chevron-right"></i>
+				  </button>
+				  </div>
+				  <h3 class="top-items text-uppercase text-center mb-5">Các sản phẩm khác có thể phù hợp với bạn</h3>
+				  <div class="container">
+					  <div id="top-items" class="dragscroll">
+						  <div class="row-fluid no-gutters">
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-1">
+									  <img src="img/items/item-1.jpg" alt="img/items/item-1.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 1</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="review ml-2">(69)</span>
+										  <span class="review ml-2">| # 120764</span>
+										  <p class="price font-weight-bold m-0 mt-3">190.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-2">
+									  <img src="img/items/item-2.jpg" alt="img/items/item-2.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 1</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="review ml-2">(375)</span>
+										  <span class="review ml-2">| # W7340</span>
+										  <p class="price font-weight-bold m-0 mt-3">76.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-3">
+									  <img src="img/items/item-3.jpg" alt="img/items/item-3.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 2</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="review ml-2">(262)</span>
+										  <span class="review ml-2">| # W7341</span>
+										  <p class="price font-weight-bold m-0 mt-3">98.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-4">
+									  <img src="img/items/item-4.jpg" alt="img/items/item-4.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 3</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(106)</span>
+										  <span class="review ml-2">| # 602371</span>
+										  <p class="price font-weight-bold m-0 mt-3">109.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-5">
+									  <img src="img/items/item-5.jpg" alt="img/items/item-5.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Bình</span> loại 4 </p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(70)</span>
+										  <span class="review ml-2">| # 5079279-2</span>
+										  <p class="price font-weight-bold m-0 mt-3">105.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-6">
+									  <img src="img/items/item-6.jpg" alt="img/items/item-6.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Ắc quy</span> loại 1</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="review ml-2">(1174)</span>
+										  <span class="review ml-2">| # 35-2</span>
+										  <p class="price font-weight-bold m-0 mt-3">800.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-7">
+									  <img src="img/items/oil-1.png" alt="img/items/oil-1.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 1</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(69)</span>
+										  <span class="review ml-2">| # 120764</span>
+										  <p class="price font-weight-bold m-0 mt-3">543.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-8">
+									  <img src="img/items/oil-2.png" alt="img/items/oil-2.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 2</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(69)</span>
+										  <span class="review ml-2">| # 120764</span>
+										  <p class="price font-weight-bold m-0 mt-3">654.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-9">
+									  <img src="img/items/oil-3.png" alt="img/items/oil-3.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 3</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(69)</span>
+										  <span class="review ml-2">| # 120764</span>
+										  <p class="price font-weight-bold m-0 mt-3">643.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+							  <div class="col-12 col-sm-6 col-md-4">
+								  <div class="item" id="item-10">
+									  <img src="img/items/oil-4.png" alt="img/items/oil-4.jpg" />
+									  <div class="text">
+										  <p class="mb-0"><span class="font-weight-bold">Nhớt</span> loại 4</p>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star checked"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="fas fa-star"></span>
+										  <span class="review ml-2">(69)</span>
+										  <span class="review ml-2">| # 120764</span>
+										  <p class="price font-weight-bold m-0 mt-3">432.000 đ</p>
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+	  </div>
+	  <script src="jq/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+	<script src="js/wow-product-page.js"></script>
+	<script src="js/product-page.js"></script>
+	<script src="js/feedback.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>    
 </body>
 </html>
