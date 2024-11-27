@@ -25,6 +25,40 @@ a:focus {
 	box-shadow: none!important;
 	outline: none!important;
 }
+img {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+#content {
+	padding: 50px 0;
+}
+
+#content .container {
+	position: relative;
+}
+
+#content .icon {
+	width: 35px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	vertical-align: top;
+}
+
+#content h2 {
+	color: #00AFE5;
+}
+
+/*
+#content h2:before {
+	margin-right: 5px;
+	color: #666666;
+}
+*/
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
