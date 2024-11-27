@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.review-container {
+	--yellow: #FFBD13;
+	--blue: #4383FF;
+	--blue-d-1: #3278FF;
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
+
+	background: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	padding: 1rem;
+}
+
+.review-container * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.review-wrapper {
+	background: var(--white);
+	padding: 2rem;
+	max-width: 576px;
+	width: 100%;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+	text-align: center;
+}
+.review-wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.review-rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 2rem;
+}
+.review-rating .review-star {
+	cursor: pointer;
+}
+.review-rating .review-star.active {
+	opacity: 0;
+	animation: review-animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes review-animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.review-rating .review-star:hover {
+	transform: scale(1.1);
+}
+textarea {
+	width: 100%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+}
+.review-btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+.review-btn-group .review-btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.review-btn-group .review-submit {
+	background: var(--blue);
+	color: var(--white);
+}
+.review-btn-group .review-submit:hover {
+	background: var(--blue-d-1);
+}
+.review-btn-group .review-cancel {
+	background: var(--white);
+	color: var(--blue);
+}
+.review-btn-group .review-cancel:hover {
+	background: var(--light);
+}
