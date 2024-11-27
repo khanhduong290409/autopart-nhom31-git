@@ -147,6 +147,16 @@ a {
 }
 
 
+#top-brands {
+	padding: 30px 0;
+}
+
+#top-brands h4:before {
+	margin-right: 5px;
+	color: #666666;
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) {}
