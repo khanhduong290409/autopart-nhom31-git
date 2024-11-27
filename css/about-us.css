@@ -99,6 +99,53 @@ a {
 	cursor: pointer;
 }
 
+#team {
+	padding: 25px 0;
+}
+
+#team h3:before {
+	content: '//';
+	margin-right: 5px;
+	color: #666666;
+}
+
+#team .item img {
+	transition: all .3s ease;
+}
+
+#team .item img:hover {
+	opacity: 0.8;
+	transition: all .3s ease;
+}
+
+#team .item {
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+#team .item .name {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+#team .item .position,
+#team .item .email {
+	text-align: center;
+	font-style: italic;
+	font-size: 13px;
+	margin: 0;
+}
+#team .item img{
+	width: 100%;
+    height: 350px ;
+    object-fit: cover;
+}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
