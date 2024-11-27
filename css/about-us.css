@@ -76,6 +76,30 @@ a {
 	text-indent: 70px;
 }
 
+
+#carousel {
+	padding: 25px 0;
+}
+
+#carousel .carousel-inner {
+	border-radius: 8px;
+}
+
+#carousel .carousel-item img {
+	height: 500px;
+}
+
+#carousel .carousel .fa-chevron-left,
+#carousel .carousel .fa-chevron-right {
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+#carousel .carousel-indicators {
+	cursor: pointer;
+}
+
+
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) {}
