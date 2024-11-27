@@ -20,10 +20,49 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
-<div id="main">
+
+<body>
+	<!-- Sidenav start -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close"></a>
+		<img class="sidenav-logo" src="img/logo.png" alt="img/logo.png" />
+		<ul>
+			<li><a href="javascript:void(0)" class="active">Trang chủ</a></li>
+			<li><a class="product" data-toggle="collapse" href="#dropdown" role="button" aria-expanded="false" aria-controls="dropdown">Sản phẩm<span class="dropdown-icon">&#8628;</span></a>
+				<ul id="dropdown" class="collapse">
+					<li><a href="product.html">Hệ Thống Phanh</a></li> 
+					<li><a href="product.html">Cảm Biến</a></li> 
+					<li><a href="product.html">Hệ Thống Lọc</a></li> 
+					<li><a href="product.html">Động Cơ</a></li> 
+					<li><a href="product.html">Hệ Thống Điều Hòa</a></li> 
+				</ul>
+			</li>
+			<li><a href="about-us.html">Giới thiệu</a></li>
+			<li><a href="contact.html">Liên hệ</a></li>
+			<li><a href="cart.html">Giỏ hàng</a></li>
+			<li><a href="registration.html">Đăng ký</a></li>
+			<li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal">Đăng nhập</a>
+		</ul>
+		<div id="social">
+			<a class="facebook" href="https://www.facebook.com" title="Facebook">
+				<img src="img/social/facebook.png" alt="img/social/facebook.png" />
+			</a>
+			<a class="instagram" href="https://www.instagram.com" title="Instagram">
+				<img src="img/social/instagram.png" alt="img/social/instagram.png" />
+			</a>
+			<a class="youtube" href="https://www.youtube.com" title="YouTube">
+				<img src="img/social/youtube.png" alt="img/social/youtube.png" />
+			</a>
+			<a class="x" href="https://www.x.com" title="X">
+				<img src="img/social/x.png" alt="img/social/x.png" />
+			</a>
+		</div>
+	</div>
+	<!-- Sidenav end -->
+	<div id="main">
 	<!-- Header start -->
-	<header>
-		<div class="container">
+		<header>
+			<div class="container">
 			<div class="row no-gutters">
 				<div class="col-md-2 d-none d-md-block">
 					<a href="javascript:void(0)">
@@ -130,7 +169,6 @@
 		</div>
 	</header>
 	<!-- Header end -->
-<body>
 	<script src="jq/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
