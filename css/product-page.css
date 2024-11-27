@@ -424,3 +424,224 @@ header #btn-navbarSearch {
 	border: none;
 	color: #000000;
 }
+/* ---------top item------ */
+#top-parts .item {
+	position: relative;
+	height: 250px;
+	padding: 15px;
+	color: #000000;
+	cursor: pointer;
+	background-color: rgb(244, 244, 244);
+	border-bottom-right-radius: 20px;
+}
+
+#top-parts .item h4 {
+	font-size: 18px;
+	color: #000000;
+}
+
+#top-parts .item h4:before {
+	margin-right: 5px;
+	color: #00AFEF;
+}
+
+#top-parts .parts-img {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: 70%;
+	transform: translate(-50%, -55%);
+	transition: all .3s ease;
+}
+
+#top-parts .item:hover .parts-img {
+	width: 60%;
+	transition: all .5s ease;
+}
+
+#top-parts .list {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	overflow-y: auto;
+	transition: all .3s ease;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #FFFFFF;
+	z-index: 9997;
+}
+
+#top-parts .list::-webkit-scrollbar-track {
+	background-color: #CCCCCC;
+}
+
+#top-parts .list::-webkit-scrollbar {
+	width: 5px;
+}
+
+#top-parts .list::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+#top-parts .item:hover .list {
+	height: 100%;
+}
+
+#top-parts .list ul {
+	margin: 0;
+	padding: 20px;
+}
+
+#top-parts .list ul li {
+	padding: 5px 0;
+	list-style: none;
+}
+
+#top-parts .list ul li:first-child {
+	padding-top: 0;
+}
+
+#top-parts .list ul li:last-child {
+	padding-bottom: 0;
+}
+
+#top-parts .list ul li a {
+	transition: .2s;
+}
+
+#top-parts .list ul li a:hover {
+	color: #00AFEF;
+	transition: .2s;
+}
+
+#items {
+	padding-top: 50px;
+	position: relative;
+}
+
+#items .top-items {
+	color: #000000;
+	font-weight: bold;
+}
+
+#items #btn-left {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 3rem;
+	z-index: 9998;
+	cursor: pointer;
+	position: absolute;
+	top: 55%;
+	left: 2%;
+	transform: translate(-2%, -55%);
+}
+
+#items #btn-left:hover {
+	opacity: 0.8;
+}
+
+#items #btn-right {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 3rem;
+	z-index: 9998;
+	cursor: pointer;
+	position: absolute;
+	top: 55%;
+	right: 2%;
+	transform: translate(-2%, -55%);
+}
+
+#items #btn-right:hover {
+	opacity: 0.8;
+}
+
+#top-items {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	color: #000000;
+}
+
+#top-items .row-fluid {
+	display: flex;
+	height: 250px;
+	margin-bottom: 30px;
+}
+
+#top-items .row-fluid .col-3 {
+	display: inline-block;
+}
+
+#top-items .item {
+	height: 100%;
+}
+
+#top-items .item img {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	transform: translate(-20%, 0);
+	width: 160px;
+	height: 150px;
+	cursor: pointer;
+}
+
+#top-items .item .text {
+	height: 35%;
+	position: absolute;
+	bottom: 0;
+	padding-left: 5px;
+	padding-right: 30px;
+	font-size: 13px;
+}
+
+#top-items .item .text p:first-child {
+	height: 45%;
+}
+
+#top-items .item .fa-star {
+	color: rgb(188, 188, 188);
+}
+
+#top-items .item .fa-star.checked {
+	color: rgb(255, 204, 0);
+}
+
+#top-items.dragscroll {
+	cursor: move;
+	/* fallback if grab cursor is unsupported */
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+
+#top-items.dragscroll:active {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+#top-items::-webkit-scrollbar {
+	height: 5px;
+}
+
+#top-items::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+}
+
+#top-items::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#top-items::-webkit-scrollbar-track {
+	background-color: #D6D6D6;
+	border-radius: 8px;
+}
