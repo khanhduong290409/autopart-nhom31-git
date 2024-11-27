@@ -228,6 +228,33 @@ input[type=number] {
   .col-2 .buttonsRow .callToAction button:hover {
     opacity: 0.6;
   }
+  /* -------smallimg----- */
+  .smallpitures {
+	margin-top: 3%;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .smallpitures .col-carousel{
+	flex-basis: 20%;
+  }
+  .smallpitures .col-carousel img{
+	width: 100%;
+	border-radius: 7px;
+	cursor: pointer;
+  }
+  
+  .smallpitures .col-carousel img:hover {
+	opacity: 0.7;
+  }
+  
+  .smallpitures .col-carousel img.active {
+	opacity: 0.7;
+	border: 3px solid var(--orange);
+	cursor: default;
+  }
   
 
 
