@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-	<!-- Meta tag start-->
 	<meta charset="UTF-8" />
 	<meta name="author" content="" />
 	<meta name="description" content="" />
@@ -11,20 +10,126 @@
 	<meta name="theme-color" content="#58595B" />
 	<meta name="msapplication-navbutton-color" content="#58595B" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
-	<!-- Meta tag end-->
 	<title>Home</title>
-	<!-- Favicon start -->
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<!-- Favicon end -->
-	<!-- CSS and Bootstrap 4 links start -->
+	<link rel="icon" href="img/logo.png" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
 	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
-	<!-- CSS and Bootstrap 4 links end -->
 </head>
-
+<div id="main">
+	<!-- Header start -->
+	<header>
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-2 d-none d-md-block">
+					<a href="javascript:void(0)">
+					<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+				</a>
+				</div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 search-input d-none d-md-block">
+							<div class="input-group">
+								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+								<button id="btn-search-input" class="btn" type="button">
+								<i class="fas fa-search"></i>
+							</button>
+							</div>
+						</div>
+						<div id="registration" class="col-md-6 text-right">
+							<ul class="registration">
+								<li>
+									<a href="registration.html" class="mr-1">
+										<i class="fa-solid fa-user"></i>
+										<!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
+										<span>Đăng ký</span>
+									</a>
+									<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+										<i class="fa-solid fa-lock"></i>												
+										<span>Đăng nhập</span>
+										</a>
+									<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+										<i class="fa-solid fa-bookmark"></i>											
+										<span>Tài khoản</span>
+									</a>
+									<ul id="user-dropdown" class="collapse">
+										<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Thông tin người dùng</a></li>
+										<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
+									</ul>
+								</li>
+								<li>
+									<a id="cart-show" href="javascript:void(0)">
+										<i class="fa-solid fa-cart-shopping"></i>											
+										<span>Giỏ hàng (0)</span>
+									</a>
+								</li>
+								<li class="social d-none d-md-inline-block">
+									<a href="https://www.facebook.com" title="Facebook">
+										<i class="fa-brands fa-facebook"></i>
+										<!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
+									</a>
+									<a href="https://www.instagram.com" title="Instagram">
+										<i class="fa-brands fa-instagram"></i>
+										<!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
+									</a>
+									<a href="https://www.youtube.com" title="YouTube">
+										<i class="fa-brands fa-youtube"></i>
+										<!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
+									</a>
+									<a href="https://www.x.com" title="X">
+										<i class="fa-brands fa-x-twitter"></i>
+										<!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 d-none d-md-block">
+							<nav class="navbar">
+								<ul class="navbar-nav text-uppercase">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Trang chủ</a>
+									</li>
+									<li id="product-dropdown" class="nav-item">
+										<a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+											</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">Giới thiệu</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Liên hệ</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+							<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+								<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+							</a>
+							<a id="sidenav" onclick="openNav()">
+								<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+							</a>
+						</div>
+						<div id="search-input" class="col-12 px-0 collapse">
+							<div class="input-group pb-3">
+								<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+								<div class="input-group-append">
+									<button id="btn-navbarSearch" class="btn btn-primary">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header end -->
 <body>
 	<script src="jq/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
