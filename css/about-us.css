@@ -59,6 +59,22 @@ a {
 	color: #666666;
 }
 */
+#about-us h2 {
+	display: inline-block;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+#about-us .logo {
+	width: 60px;
+	margin-right: 5px;
+}
+
+#about-us .about-us {
+	color: #000000;
+	text-align: justify;
+	text-indent: 70px;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
