@@ -228,6 +228,21 @@ a {
 		height: 300px;
 	}
 }
+@media (min-width: 812px) and (max-width: 991px) {
+	#content {
+		padding-bottom: 0;
+	}
+	#about-us .about-us {
+		font-size: 13px;
+		text-indent: 40px;
+	}
+	#carousel .carousel-item img {
+		height: 300px;
+	}
+	#player {
+		height: 300px;
+	}
+}
 @media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) {}
