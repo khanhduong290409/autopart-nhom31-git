@@ -155,7 +155,45 @@ a {
 	margin-right: 5px;
 	color: #666666;
 }
+/* Media queries */
 
+@media (max-width: 320px) {
+	#content {
+		padding-bottom: 0;
+	}
+	#about-us h2 {
+		letter-spacing: 2px;
+	}
+	#about-us .about-us {
+		text-indent: 40px;
+	}
+	#carousel .carousel-item img {
+		height: 250px;
+	}
+	#player {
+		height: auto;
+		padding-top: 20px;
+	}
+}
+@media (min-width: 321px) and (max-width: 575px) {
+	#content {
+		padding-bottom: 0;
+	}
+	#about-us h2 {
+		letter-spacing: 2px;
+	}
+	#about-us .about-us {
+		font-size: 13px;
+		text-indent: 40px;
+	}
+	#carousel .carousel-item img {
+		height: 220px;
+	}
+	#player {
+		height: 200px;
+		padding-top: 20px;
+	}
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
