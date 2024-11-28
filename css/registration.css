@@ -34,6 +34,7 @@ img {
 a {
 	text-decoration: none!important;
 }
+
 #content {
 	padding: 50px 0;
 }
@@ -58,6 +59,7 @@ a {
 	margin-bottom: 4px;
 	vertical-align: top;
 }
+
 #registration form {
 	background-color: rgba(88, 89, 91, 0.1);
 	border-radius: 8px;
@@ -94,6 +96,7 @@ a {
 	-ms-user-select: none;
 	user-select: none;
 }
+
 #registration .password-meter-bar {
 	margin: 10px 0;
 	width: 75%;
@@ -150,6 +153,32 @@ a {
 	border-radius: 50%;
 	background: #FFFFFF;
 }
+
+#registration #company-name {
+	display: none;
+}
+
+.show-input {
+	height: auto!important;
+	opacity: 1!important;
+	transition: .5s!important;
+}
+
+#registration form .custom-select.arrow {
+	background: #FFFFFF url('../img/icon/arrow-grey-bottom.png') no-repeat;
+	border: 1px solid #E4E4E4;
+	background-position: 98% 60%;
+	background-size: 26px 26px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.custom-select-arrow {
+	background: #FFFFFF url('../img/icon/arrow-grey-top.png') no-repeat!important;
+	background-position: 98% 60%!important;
+	background-size: 26px 26px!important;
+}
+
 #registration form input::-webkit-outer-spin-button,
 #registration form input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -180,6 +209,7 @@ a {
 	background-color: #FFFFFF;
 	background-size: 10px 10px;
 }
+
 #registration #btn-registration {
 	padding: 10px 20px;
 	font-weight: bold;
@@ -239,8 +269,10 @@ a {
 	}
 }
 
+@media (min-width: 768px) and (max-width: 811px) {}
 
+@media (min-width: 812px) and (max-width: 991px) {}
 
+@media (min-width: 992px) and (max-width: 1199px) {}
 
-
-
+@media (min-width: 1200px) {}
