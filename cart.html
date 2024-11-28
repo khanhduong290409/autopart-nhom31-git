@@ -191,10 +191,104 @@
 			</div>
 		</div>
 		<!-- Modal end -->
-
-        <!-- Cart start -->
-		
+        <div class="container">
+			<!-- Cart start -->
+			<div id="cart-main">
+                <h5>Giỏ hàng của bạn (0)</h5>
+                <div id="checkout-items" class="row no-gutters my-4">
+                    <div class="col-md-7">
+                        <div class="row align-items-center my-3">
+                            <div class="col-lg-3 text-center">
+                                <img src="img/items/oil-4.png" alt="img/items/oil-4.png" class="product-picture" />
+                            </div>
+                            <div class="col-lg-5 text-center text-lg-left add-toCart">
+                                <p class="name"><b>Má phanh Wearever - Nội địa</b></p>
+                                <p>Mã sản phẩm: 18-B4729</p>
+                                <p class="text-uppercase text-primary">Bảo hành thay thế trọn đời</p>
+                                <p class="text-uppercase price">680.000đ</p>
+                                <select class="custom-select triangle">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <p class="text-uppercase price text-danger font-weight-bold">680.000đ</p>
+                                <button id="btn-remove" class="btn btn-danger">Xóa</button>
+                            </div>
+                            <div class="col-lg-4 add-toCart">
+                                <div class="row mt-3">
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Nhận tại cửa hàng</p>
+                                        <div class="img-shop">
+                                            <img src="img/icon/shop.png" alt="img/icon/shop.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-12 shipping">
+                                        <div class="container">
+                                            <input type="radio" class="radio-button" name="radio" />
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p>Giao hàng tận nhà</p>
+                                        <div class="img-cart">
+                                            <img src="img/icon/gift.png" alt="img/icon/gift.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 pl-lg-5">
+                        <div id="paypal" class="text-uppercase">
+                            <button id="btn-paypal" class="btn"><img src="img/icon/paypal.png" alt="img/icon/paypal.png" /> Thanh toán PayPal</button>
+                        </div>
+                        <div id="checkout-div">
+                            <div id="order-summary">
+                                <h4 class="text-uppercase text-center font-weight-bold m-0">Tóm tắt đơn hàng</h4>
+                            </div>
+                            <div id="checkout-total">
+                                <div class="promo-code-div">
+                                    <p class="text-uppercase">Nhập mã khuyến mãi hoặc mã giảm giá tại đây</p>
+                                    <a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Collapse"></a>
+                                    <div id="promo-code" class="collapse show">
+                                        <div class="input-group">
+                                            <input type="text" class="code" />
+                                            <button id="btn-apply" class="btn btn-primary" disabled>Áp dụng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="subtotal" class="text-uppercase">
+                                    Tạm tính<span class="text-danger font-weight-bold float-right">860.000đ</span>
+                                </div>
+                                <div id="shipping" class="text-uppercase">
+                                    <p>Ước tính phí giao hàng</p><span class="font-weight-bold float-right">Miễn phí</span>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Nhập mã bưu chính để ước tính phí giao hàng" />
+                                        <button id="btn-go" class="btn btn-primary">Xem</button>
+                                    </div>
+                                </div>
+                                <div id="total" class="text-uppercase">
+                                    Tổng cộng<span class="float-right">860.000đ</span>
+                                </div>
+                                <div id="checkout-now" class="text-uppercase">
+                                    <button id="btn-checkout-now" class="btn btn-primary text-uppercase font-weight-bold" onclick="window.location.href='checkout.html'">Thanh toán ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 			<!-- Cart end -->
+        </div>
 			<!-- Dropdown start -->
 			
 			<!-- Dropdown end -->
