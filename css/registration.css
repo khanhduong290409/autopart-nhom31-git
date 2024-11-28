@@ -150,6 +150,38 @@ a {
 	border-radius: 50%;
 	background: #FFFFFF;
 }
+#registration form input::-webkit-outer-spin-button,
+#registration form input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#registration form label input[type="checkbox"],
+#registration form div input[type="checkbox"] {
+	margin-left: 2px;
+	opacity: 0;
+}
+
+#registration form label .checkbox-span {
+	height: 14px;
+	width: 14px;
+	border: 1px solid #00AFEF;
+	background-color: #FFFFFF;
+	display: inline-block;
+	position: relative;
+	top: 1.8px;
+	border-radius: 2px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+#registration form label input:checked + .checkbox-span {
+	background: url('../img/icon/check.svg') center center no-repeat;
+	background-color: #FFFFFF;
+	background-size: 10px 10px;
+}
+
+
 
 
 
