@@ -47,3 +47,24 @@ a {
 	margin-bottom: 2px;
 	vertical-align: middle;
   }
+  #contact .icon-2 {
+	width: 35px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	vertical-align: bottom;
+  }
+  
+  #contact h2 {
+	margin-bottom: 40px;
+  }
+  
+  #contact h2:before {
+	margin-right: 5px;
+	color: #666666;
+  }
+  
+  #contact .text-company {
+	color: #464646;
+	padding-top: 3px;
+	padding-left: 45px;
+  }
