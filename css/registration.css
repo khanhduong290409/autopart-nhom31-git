@@ -180,6 +180,65 @@ a {
 	background-color: #FFFFFF;
 	background-size: 10px 10px;
 }
+#registration #btn-registration {
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+/* Media queries */
+
+@media (max-width: 320px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		width: 100%;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 575px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#registration form {
+		padding: 20px;
+	}
+	#registration form h4 {
+		border-bottom: 3px solid #00AFEF;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	#registration form .shipping {
+		margin-bottom: 30px;
+	}
+	#registration #btn-registration {
+		text-align: center;
+		width: 70%;
+	}
+}
+
 
 
 
