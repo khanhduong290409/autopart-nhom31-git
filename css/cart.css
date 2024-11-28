@@ -733,3 +733,216 @@ header #btn-navbarSearch {
 	background-color: #D6D6D6;
 	border-radius: 8px;
 }
+/* ----------footer------- */
+footer {
+	padding-top: 30px;
+	color: #FFFFFF;
+	border-top: 3px solid #00AFEF;
+	background-color: rgb(49, 52, 53);
+}
+
+footer .logo {
+	width: 80px;
+	float: left;
+	margin: 5px 15px 0 0;
+}
+
+footer .about-us {
+	font-size: 12px;
+}
+
+footer p {
+	color: #FFFFFF;
+}
+
+footer h5 {
+	margin-bottom: 15px;
+}
+
+footer h5:before {
+	margin-right: 5px;
+	color: #00AFEF;
+}
+
+footer .contact svg {
+	margin-right: 5px;
+}
+
+footer .contact {
+	font-size: 13px;
+}
+
+footer .email {
+	color: #FFFFFF;
+}
+
+footer .social {
+	padding: 20px 0;
+}
+
+footer .social a {
+	margin: 0 5px;
+}
+
+footer .social a:first-child {
+	margin-left: 0;
+}
+
+footer .social img {
+	width: 18px;
+}
+
+footer .social img:hover {
+	opacity: 0.8;
+}
+
+footer ul {
+	margin: 0;
+	padding-left: 5px;
+	list-style: none;
+}
+
+footer ul li {
+	padding: 5px 0;
+}
+
+footer ul li:first-child {
+	padding-top: 0;
+}
+
+footer ul li:last-child {
+	padding-bottom: 0;
+}
+
+footer ul li a {
+	color: #FFFFFF;
+	padding-left: 10px;
+}
+
+footer ul li a:hover {
+	color: #FFFFFF;
+	text-decoration: underline!important;
+	cursor: pointer;
+}
+
+footer .pay img {
+	width: 50px;
+	height: 45px;
+	margin-right: 5px;
+}
+
+footer input,
+footer textarea {
+	font-size: 12px;
+	border: none;
+	padding: 5px 8px 3px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+footer input:focus,
+footer textarea:focus {
+	background-color: #FAFFBD;
+}
+
+footer textarea::placeholder {
+	font-style: italic;
+}
+
+footer label:first-child {
+	margin-top: 0;
+}
+
+footer label {
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+footer #btn-send {
+	font-size: 12px;
+	margin-top: 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	transition: .3s;
+}
+
+footer #btn-send:hover {
+	transition: .3s;
+	opacity: 0.8;
+}
+
+footer .subscribe {
+	font-size: 12px;
+}
+
+footer .input-group input {
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 5px 8px 3px;
+}
+
+footer .input-group input:focus {
+	background-color: #FAFFBD;
+}
+
+footer .input-group input::placeholder {
+	font-size: 12px;
+	font-style: italic;
+}
+
+footer #btn-subscribe {
+	font-size: 12px;
+	padding: 5px 10px;
+	font-weight: bold;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	transition: .3s;
+}
+
+footer #btn-subscribe:hover {
+	transition: .3s;
+	opacity: 0.8;
+}
+
+footer .all-rights {
+	padding: 15px 0;
+	background-color: #263238;
+	font-size: 13px;
+	color: #D3D3D3;
+}
+
+footer .all-rights a {
+	color: #D3D3D3;
+}
+
+footer .all-rights a:hover {
+	text-decoration: underline!important;
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 40px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	z-index: 9999;
+	cursor: pointer;
+	background: url("../img/icon/back-to-top.png") center center no-repeat;
+	background-size: 24px 24px;
+	background-color: #00AFEF;
+	border-radius: 50%;
+	transition: all .5s ease;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.show {
+	visibility: visible!important;
+	opacity: 1!important;
+}
+
+#back-to-top:hover {
+	opacity: 0.8!important;
+}
