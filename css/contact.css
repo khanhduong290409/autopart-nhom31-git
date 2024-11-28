@@ -76,3 +76,51 @@ a {
   #map iframe {
 	display: block;
   }
+  #contact .contact-form {
+	padding-top: 50px;
+  }
+  
+  #contact .contact-form label:after {
+	content: ' *';
+	color: #FF0000;
+  }
+  
+  #contact .contact-form .custom-select.arrow {
+	background: url('../img/icon/arrow-black-bottom.png') no-repeat;
+	background-position: 98% 60%;
+	background-size: 26px 26px;
+	cursor: pointer;
+	transition: .2s;
+  }
+  
+  .custom-select-arrow {
+	background: #FFFFFF url('../img/icon/arrow-black-top.png') no-repeat!important;
+	background-position: 98% 60%!important;
+	background-size: 26px 26px!important;
+  }
+  
+  #contact .contact-form input,
+  #contact .contact-form select,
+  #contact .contact-form textarea {
+	color: #000000;
+  }
+  
+  #contact .contact-form input:focus,
+  #contact .contact-form select:focus,
+  #contact .contact-form textarea:focus {
+	border-color: #00AFEF;
+  }
+  
+  #contact .contact-form textarea::placeholder {
+	font-style: italic;
+  }
+  
+  #contact .contact-form input::-webkit-outer-spin-button,
+  #contact .contact-form input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+  }
+  
+  #contact #btn-submit {
+	font-size: 16px;
+  }
