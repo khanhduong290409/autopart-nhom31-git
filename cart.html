@@ -19,158 +19,120 @@
 
 	<!-- Favicon end -->
 	<!-- CSS and Bootstrap 4 link start -->
-	
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cart.css">
 	<!-- CSS and Bootstrap 4 link start end -->
 </head>
 
 <body>
-	
-	<!-- Sidenav start -->
-	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close"></a>
-		<img class="sidenav-logo" src="img/logo.png" alt="img/logo.png" />
-		<ul>
-			<li><a href="javascript:void(0)" class="active">Trang chủ</a></li>
-			<li><a class="product" data-toggle="collapse" href="#dropdown" role="button" aria-expanded="false" aria-controls="dropdown">Sản phẩm<span class="dropdown-icon">&#8628;</span></a>
-				<ul id="dropdown" class="collapse">
-					<li><a href="product.html">Hệ Thống Phanh</a></li> 
-					<li><a href="product.html">Cảm Biến</a></li> 
-					<li><a href="product.html">Hệ Thống Lọc</a></li> 
-					<li><a href="product.html">Động Cơ</a></li> 
-					<li><a href="product.html">Hệ Thống Điều Hòa</a></li> 
-				</ul>
-			</li>
-			<li><a href="about-us.html">Giới thiệu</a></li>
-			<li><a href="contact.html">Liên hệ</a></li>
-			<li><a href="cart.html">Giỏ hàng</a></li>
-			<li><a href="registration.html">Đăng ký</a></li>
-			<li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal">Đăng nhập</a>
-		</ul>
-		<div id="social">
-			<a class="facebook" href="https://www.facebook.com" title="Facebook">
-				<img src="img/social/facebook.png" alt="img/social/facebook.png" />
-			</a>
-			<a class="instagram" href="https://www.instagram.com" title="Instagram">
-				<img src="img/social/instagram.png" alt="img/social/instagram.png" />
-			</a>
-			<a class="youtube" href="https://www.youtube.com" title="YouTube">
-				<img src="img/social/youtube.png" alt="img/social/youtube.png" />
-			</a>
-			<a class="x" href="https://www.x.com" title="X">
-				<img src="img/social/x.png" alt="img/social/x.png" />
-			</a>
-		</div>
-	</div>
-	<!-- Sidenav end -->
-	<div id="main">
-		<!-- Header start -->
-		<header>
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-2 d-none d-md-block">
-						<a href="javascript:void(0)">
-						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
-					</a>
-					</div>
-					<div class="col-md-10">
-						<div class="row">
-							<div class="col-md-6 search-input d-none d-md-block">
-								<div class="input-group">
-									<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
-									<button id="btn-search-input" class="btn" type="button">
-									<i class="fas fa-search"></i>
-								</button>
-								</div>
-							</div>
-							<div id="registration" class="col-md-6 text-right">
-								<ul class="registration">
-									<li>
-										<a href="registration.html" class="mr-1">
-											<i class="fa-solid fa-user"></i>
-											<!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
-											<span>Đăng ký</span>
-										</a>
-										<a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
-											<i class="fa-solid fa-lock"></i>												
-											<span>Đăng nhập</span>
-											</a>
-										<a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
-											<i class="fa-solid fa-bookmark"></i>											
-											<span>Tài khoản</span>
-										</a>
-										<ul id="user-dropdown" class="collapse">
-											<li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Thông tin người dùng</a></li>
-											<li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
-										</ul>
-									</li>
-									<li>
-										<a id="cart-show" href="javascript:void(0)">
-											<i class="fa-solid fa-cart-shopping"></i>											
-											<span>Giỏ hàng (0)</span>
-										</a>
-									</li>
-									<li class="social d-none d-md-inline-block">
-										<a href="https://www.facebook.com" title="Facebook">
-											<i class="fa-brands fa-facebook"></i>
-											<!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
-										</a>
-										<a href="https://www.instagram.com" title="Instagram">
-											<i class="fa-brands fa-instagram"></i>
-											<!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
-										</a>
-										<a href="https://www.youtube.com" title="YouTube">
-											<i class="fa-brands fa-youtube"></i>
-											<!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
-										</a>
-										<a href="https://www.x.com" title="X">
-											<i class="fa-brands fa-x-twitter"></i>
-											<!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-12 d-none d-md-block">
-								<nav class="navbar">
-									<ul class="navbar-nav text-uppercase">
-										<li class="nav-item">
-											<a class="nav-link" href="index.html">Trang chủ</a>
-										</li>
-										<li id="product-dropdown" class="nav-item">
-											<a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
-												</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="about-us.html">Giới thiệu</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="contact.html">Liên hệ</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
-							<div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
-								<a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
-									<img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
-								</a>
-								<a id="sidenav" onclick="openNav()">
-									<img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
-								</a>
-							</div>
-							<div id="search-input" class="col-12 px-0 collapse">
-								<div class="input-group pb-3">
-									<input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
-									<div class="input-group-append">
-										<button id="btn-navbarSearch" class="btn btn-primary">
-											<i class="fas fa-search"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+	<header>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-2 d-none d-md-block">
+                    <a href="javascript:void(0)">
+                    <img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
+                </a>
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6 search-input d-none d-md-block">
+                            <div class="input-group">
+                                <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                                <button id="btn-search-input" class="btn" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div id="registration" class="col-md-6 text-right">
+                            <ul class="registration">
+                                <li>
+                                    <a href="registration.html" class="mr-1">
+                                        <i class="fa-solid fa-user"></i>
+                                        <!-- <img src="img/icon/user.png" alt="img/icon/profile-icon.png" /> -->
+                                        <span>Đăng ký</span>
+                                    </a>
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#modal">
+                                        <i class="fa-solid fa-lock"></i>												
+                                        <span>Đăng nhập</span>
+                                        </a>
+                                    <a data-toggle="collapse" href="#user-dropdown" role="button" aria-expanded="false" aria-controls="user-dropdown">
+                                        <i class="fa-solid fa-bookmark"></i>											
+                                        <span>Tài khoản</span>
+                                    </a>
+                                    <ul id="user-dropdown" class="collapse">
+                                        <li><a href="admin/index.html"><i class="fas fa-user mr-2"></i>Thông tin người dùng</a></li>
+                                        <li><a href="javascript:vodi(0)"><i class="fas fa-sign-out-alt mr-2"></i>Đăng xuất</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a id="cart-show" href="javascript:void(0)">
+                                        <i class="fa-solid fa-cart-shopping"></i>											
+                                        <span>Giỏ hàng (0)</span>
+                                    </a>
+                                </li>
+                                <li class="social d-none d-md-inline-block">
+                                    <a href="https://www.facebook.com" title="Facebook">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <!-- <img src="img/social/facebook.png" alt="img/social/facebook.png" /> -->
+                                    </a>
+                                    <a href="https://www.instagram.com" title="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <!-- <img src="img/social/instagram.png" alt="img/social/instagram.png" /> -->
+                                    </a>
+                                    <a href="https://www.youtube.com" title="YouTube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <!-- <img src="img/social/youtube.png" alt="img/social/youtube.png" /> -->
+                                    </a>
+                                    <a href="https://www.x.com" title="X">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <!-- <img src="img/social/x.png" alt="img/social/x.png" /> -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 d-none d-md-block">
+                            <nav class="navbar">
+                                <ul class="navbar-nav text-uppercase">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li id="product-dropdown" class="nav-item">
+                                        <a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+                                            </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about-us.html">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="navbarTop-right" class="col-12 text-right p-0 my-3 d-md-none">
+                            <a id="navbarSearch" data-toggle="collapse" href="#search-input" role="button" aria-expanded="false" aria-controls="search-input">
+                                <img src="img/icon/search-white.png" alt="img/icon/search-white.png" />
+                            </a>
+                            <a id="sidenav" onclick="openNav()">
+                                <img class="ml-3" src="img/side-menu.png" alt="img/side-menu.png" />
+                            </a>
+                        </div>
+                        <div id="search-input" class="col-12 px-0 collapse">
+                            <div class="input-group pb-3">
+                                <input type="text" placeholder="Nhập tên sản phẩm cần tìm" />
+                                <div class="input-group-append">
+                                    <button id="btn-navbarSearch" class="btn btn-primary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 		<!-- Header end -->
 	<!-- Breadcrumb start -->
 
