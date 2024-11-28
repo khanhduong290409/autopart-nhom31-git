@@ -179,3 +179,28 @@ a {
 	  padding-top: 25px;
 	}
   }
+  @media (min-width: 576px) and (max-width: 767px) {
+	#content {
+	  padding-bottom: 30px;
+	}
+	#contact h2 {
+	  font-size: 20px;
+	  margin-bottom: 30px;
+	}
+	#contact h5 {
+	  margin-top: 0!important;
+	  margin-bottom: 0!important;
+	}
+	#contact p {
+	  margin-bottom: 30px;
+	}
+	#map {
+	  padding: 15px;
+	}
+	#map iframe {
+	  height: 250px;
+	}
+	#contact .contact-form {
+	  padding-top: 25px;
+	}
+  }
