@@ -58,4 +58,41 @@ a {
 	margin-bottom: 4px;
 	vertical-align: top;
 }
+#registration form {
+	background-color: rgba(88, 89, 91, 0.1);
+	border-radius: 8px;
+	padding: 30px;
+}
+
+#registration form h4 {
+	margin-bottom: 40px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #00AFEF;
+}
+
+#registration form input,
+#registration form select {
+	color: #000000;
+}
+
+#registration form input:focus,
+#registration form select:focus {
+	border-color: #00AFEF;
+}
+
+#registration form input::placeholder {
+	font-style: italic;
+}
+
+#registration form .form-check {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 
