@@ -8,3 +8,42 @@ body {
   font-size: 14px;
   color: #00AFE5;
 }
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  box-shadow: none!important;
+  outline: none!important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none!important;
+}
+#content {
+	padding: 50px 0;
+  }
+  
+  #content .container {
+	position: relative;
+  }
+  
+  #content .icon {
+	width: 30px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+  }
