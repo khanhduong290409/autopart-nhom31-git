@@ -94,5 +94,62 @@ a {
 	-ms-user-select: none;
 	user-select: none;
 }
+#registration .password-meter-bar {
+	margin: 10px 0;
+	width: 75%;
+	border: 3px solid #C0C0C0;
+}
+
+#registration form .radio input {
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	height: 22px;
+	width: 22px;
+	z-index: 9999;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#registration form .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	width: 22px;
+	background-color: #EEEEEE;
+	border-radius: 50%;
+	transition: .3s;
+}
+
+#registration form .radio .form-check:hover input ~ .checkmark {
+	background-color: #CCCCCC;
+	transition: .3s;
+}
+
+#registration form .radio .form-check input:checked ~ .checkmark {
+	background-color: #2196F3;
+}
+
+#registration form .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#registration form .radio .form-check input:checked ~ .checkmark:after {
+	display: block;
+}
+
+#registration form .radio .form-check .checkmark:after {
+	top: 7px;
+	left: 7px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+
 
 
