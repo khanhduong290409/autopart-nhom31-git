@@ -68,3 +68,11 @@ a {
 	padding-top: 3px;
 	padding-left: 45px;
   }
+  #map {
+	padding: 20px;
+	background-color: #F0F0F0;
+  }
+  
+  #map iframe {
+	display: block;
+  }
