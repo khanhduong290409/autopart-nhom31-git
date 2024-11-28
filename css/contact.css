@@ -124,3 +124,29 @@ a {
   #contact #btn-submit {
 	font-size: 16px;
   }
+  @media (max-width: 320px) {
+	#content {
+	  padding-bottom: 30px;
+	}
+	#contact h2 {
+	  font-size: 20px;
+	  margin-bottom: 30px;
+	}
+	#contact h5 {
+	  margin-top: 0!important;
+	  margin-bottom: 0!important;
+	}
+	#contact p {
+	  margin-bottom: 30px;
+	}
+	#map {
+	  padding: 10px;
+	}
+	#map iframe {
+	  height: auto;
+	}
+	#contact input,
+	#contact select {
+	  width: 70%;
+	}
+  }
