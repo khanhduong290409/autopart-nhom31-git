@@ -12,7 +12,7 @@
     <meta name="msapplication-navbutton-color" content="#58595B" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
     <!-- Meta tag end-->
-    <title>Trang Đăng Ký</title>
+    <title>Trang Liên Hệ</title>
     <!-- Favicon start -->
     <link rel="icon" href="img/logo.png" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -179,14 +179,14 @@
 		<div class="container">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
+				<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
 			</ol>
 		</div>
 	</nav>
 	<!-- Breadcrumb end -->
 	<!-- Content start -->
 	<div id="content">
-		<!-- login form start -->
+		<!-- Modal start -->
 		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -230,9 +230,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- login form end -->
+		<!-- Modal end -->
 		<div class="container">
-			<span id="sidenav" class="d-md-none" onclick="openNav()"></span>
 			<!-- Cart start -->
 			<div id="cart">
 				<div class="item-inCart">
@@ -368,61 +367,6 @@
 				</div>
 			</div>
 			<!-- Dropdown end -->
-			<!-- Registration form start -->
-			<div id="registration">
-				<form action="">
-					<div class="row justify-content-center">
-						<div class="col-md-4 login">
-							<h4>Đăng ký tài khoản mới</h4>
-							<div class="form-group">
-								<label class="email"><b>Tên tài khoản hoặc địa chỉ Email</b> * </label>
-								<input type="email" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label><b>Mật khẩu</b> * </label>
-								<input type="password" class="form-control" placeholder="Mật khẩu phải có độ dài ít nhất 4 ký tự" required />
-								<div class="password-meter-bar"></div>
-							</div>
-							<div class="form-group">
-								<label><b>Nhập lại mật khẩu</b> * </label>
-								<input type="password" class="form-control" required />
-							</div>
-						</div>
-						<div class="col-md-4 offset-md-2 address">
-							<h4>Thông tin cá nhân</h4>
-							<div class="form-group">
-								<label><b>Tên</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label><b>Họ</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<div class="col-lg-6 p-0">
-									<label><b>Giới tính</b> * </label>
-									<select class="custom-select arrow" name="reason" required>
-									<option selected value="">-</option>
-									<option value="1">Nam</option>
-									<option value="2">Nữ</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label><b>Số điện thoại</b> * </label>
-								<input type="number" class="form-control" required />
-							</div>
-							<div> 
-								<p>Thông tin cá nhân của bạn sẽ được sử dụng để tăng cường trải nghiệm sử dụng website, để quản lý truy cập vào tài khoản của bạn, và cho các mục đích cụ thể khác được mô tả trong <a href="about-us.html">chính sách riêng tư</a> của chúng tôi</p>
-							</div>
-							<div class="text-right">
-								<button id="btn-registration" class="btn btn-primary" type="submit">Đăng ký</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-			<!-- Registration form end -->
 		</div>
 	</div>
 	<!-- Content end -->
@@ -520,7 +464,9 @@
 	</footer>
 	<!-- Footer end -->
 	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<!-- JavaScript links start -->
 	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZv4d0llq6H3LTupaCXL-Vec5a-q7I28&callback=initMap"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
 	<script src="js/wow.js"></script>
