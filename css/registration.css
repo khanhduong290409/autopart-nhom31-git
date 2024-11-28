@@ -34,3 +34,28 @@ img {
 a {
 	text-decoration: none!important;
 }
+#content {
+	padding: 50px 0;
+}
+
+#content .container {
+	position: relative;
+}
+
+#content h3 {
+	color: black;
+	margin-bottom: 50px;
+}
+
+#content h3:before {
+	margin-right: 5px;
+	color: #7d060c;
+}
+
+#content .icon {
+	width: 25px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	vertical-align: top;
+}
+
